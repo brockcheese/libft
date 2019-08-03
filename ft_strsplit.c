@@ -6,7 +6,7 @@
 /*   By: bpace <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/07/28 03:21:57 by bpace             #+#    #+#             */
-/*   Updated: 2019/08/03 03:19:26 by bpace            ###   ########.fr       */
+/*   Updated: 2019/08/03 03:22:50 by bpace            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -70,7 +70,7 @@ char		**ft_strsplit(char const *s, char c)
 		ansi2 = 0;
 		i = stupidnormline(s, i, c);
 		ans[ansi] = malloc(sizeof(char) * (getmallensmall(s + i, c) + 1));
-		while (s[i] != c)
+		while (s[i] && s[i] != c)
 			ans[ansi][ansi2++] = s[i++];
 		ans[ansi][ansi2] = '\0';
 	}
