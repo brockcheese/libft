@@ -6,7 +6,7 @@
 /*   By: bpace <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/07/28 03:21:57 by bpace             #+#    #+#             */
-/*   Updated: 2019/08/04 22:15:01 by bpace            ###   ########.fr       */
+/*   Updated: 2019/08/04 22:49:17 by bpace            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,7 +43,7 @@ static int	getmallensmall(char const *s, char c)
 
 static int	stupidnormline(char const *s, int i, char c)
 {
-	while (s[i] == c)
+	while (s[i] && s[i] == c)
 		i++;
 	return (i);
 }
