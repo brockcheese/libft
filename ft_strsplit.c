@@ -6,7 +6,7 @@
 /*   By: bpace <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/07/28 03:21:57 by bpace             #+#    #+#             */
-/*   Updated: 2019/08/04 22:49:17 by bpace            ###   ########.fr       */
+/*   Updated: 2019/08/04 22:57:56 by bpace            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,7 +36,7 @@ static int	getmallensmall(char const *s, char c)
 	int	i;
 
 	i = -1;
-	while (s[++i] != c)
+	while (s[++i] && s[i] != c)
 		;
 	return (i);
 }
