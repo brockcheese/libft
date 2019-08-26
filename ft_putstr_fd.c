@@ -6,7 +6,7 @@
 /*   By: bpace <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/07/25 20:51:03 by bpace             #+#    #+#             */
-/*   Updated: 2019/07/25 20:52:23 by bpace            ###   ########.fr       */
+/*   Updated: 2019/08/26 15:11:06 by bpace            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,12 +14,5 @@
 
 void	ft_putstr_fd(char const *s, int fd)
 {
-	int i;
-
-	i = 0;
-	while (s[i])
-	{
-		ft_putchar_fd(s[i], fd);
-		i++;
-	}
+	write(fd, s, ft_strlen(s));
 }
