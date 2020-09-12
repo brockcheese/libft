@@ -12,6 +12,8 @@
 
 #include "libft.h"
 
+/* copies the memory in src to the memory in dst the length of n bytes. */
+
 void	*ft_memcpy(void *restrict dst, const void *restrict src, size_t n)
 {
 	size_t	i;

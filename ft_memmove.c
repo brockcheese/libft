@@ -12,6 +12,8 @@
 
 #include "libft.h"
 
+/* copies len bytes from string src to string dst */
+
 void	*ft_memmove(void *dst, const void *src, size_t len)
 {
 	size_t	i;
