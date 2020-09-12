@@ -12,12 +12,16 @@
 
 #include "libft.h"
 
+/* Sets the first num bytes of memory pointed by b to the specified value, c
+	where len is the number of bytes to be set to c */
+
 void	*ft_memset(void *b, int c, size_t len)
 {
 	size_t			i;
 	char			*ptr;
 	unsigned char	temp;
 
+	//setting counter
 	i = 0;
 	ptr = (char *)b;
 	temp = (unsigned char)c;
